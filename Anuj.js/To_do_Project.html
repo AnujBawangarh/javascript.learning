@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Application</title>
+</head>
+<body>
+<div>
+    <h1>
+    Welcome to your own TO DO Application.
+    </h1>
+</div>
+
+<div>
+    <h2>
+    Hare Krishna!!
+    Trying to be your task Partner.
+    </h2>
+</div>
+
+<div>
+    <input type="text", placeholder="Enter your Task">
+    <button onclick="addtodo()">Add TO DO!</button>
+</div>
+
+<script>
+    function addtodo(){
+const value = document.querySelector("input").value;
+
+const spanEl = document.createElement("span");
+const ButtonEl = document.createElement("Button");
+spanEl.innerHTML = value;
+ButtonEl.innerHTML = "Delete";
+////
+const NewEleDiv = document.createElement("div");
+NewEleDiv.appendChild(spanEl);
+NewEleDiv.appendChild(ButtonEl);
+document.querySelector("body").appendChild(NewEleDiv);
+    }
+</script>
+</body>
+</html>
+
