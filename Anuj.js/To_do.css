@@ -22,3 +22,26 @@ h2{
 #todo {
     text-align: center;
     }
+
+#bar, #addbtn{
+    font-size: large;
+}
+
+#addbtn {
+    font-family: fantasy;
+    box-shadow: 3px 3px 0px 0px grey;
+    border-radius: 5px;
+}
+
+#bar {
+    border-radius: 5px;
+}
+
+
+button {
+        transition: transform 0.2s ease;
+    }
+
+button.click {
+        transform: scale(0.9);
+    }

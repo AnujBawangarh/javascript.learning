@@ -23,8 +23,8 @@
 </div>
 
 <div id="todo">
-    <input type="text", placeholder="Enter your Task">
-    <button onclick="addtodo()">Add TO DO!</button>
+    <input type="text", placeholder="Enter your Task" id="bar">
+    <button onclick="addtodo()" id="addbtn">Add TO DO!</button>
 </div>
 
 <script>
@@ -76,6 +76,15 @@ document.querySelector("input").addEventListener('keypress', (e) => {
             addtodo();
         }
     });
+
+document.querySelector("#addbtn").addEventListener('click', (e) => {
+    const button = e.target;
+    button.classList.add('click'); // add the class
+    setTimeout(function(){
+        button.classList.remove('click'); // remove after 200ms
+    }, 200);
+});
+
 
 </script>
 </body>
